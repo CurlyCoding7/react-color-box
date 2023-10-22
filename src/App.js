@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Box from "./components/Box";
+import BoxGrid from "./components/BoxGrid";
 
 function App() {
+  const colorArr = [
+    "red",
+    "blue",
+    "black",
+    "yellow",
+    "orange",
+    "green",
+    "grey",
+    "brown",
+    "pink",
+    "violet",
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BoxGrid colors={colorArr} />
     </div>
   );
 }
